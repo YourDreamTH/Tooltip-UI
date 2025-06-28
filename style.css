@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: 100px auto;
+    justify-items: center;
+    width: 600px;
+    height: 200px;
+    border: solid black 1px;
+    border-radius: 30px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    margin-top: 60px;
+    padding: 30px;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.home:hover::after {
+  content: " Here is everything I have built";
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding-top: 20px;   
+  border-radius: 13px;       
+  white-space: nowrap; 
+  margin-bottom: 10px;
+}
+
+.blog:hover::after {
+  content: " Here is everything I have built";
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding-top: 20px;   
+  border-radius: 13px;       
+  white-space: nowrap; 
+  margin-bottom: 10px;
+
+}
+
+.project:hover::after{
+content: "This is Project";
+position: absolute;
+top: 150%;
+right: 50%;
+width: 250px;
+height: 40px;
+transform: translateX(50%);
+text-align: center;
+background-color: black;
+color: white;
+padding-top: 20px;   
+border-radius: 13px; 
+margin-top: 10px;
+
+}
+
+
